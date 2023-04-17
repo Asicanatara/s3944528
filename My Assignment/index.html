@@ -1,0 +1,53 @@
+<html> 
+    <head>
+        <title>Assignment 2: Icons
+
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    </head>
+
+    <body style="background-color: rgb(122, 111, 172);">
+        
+        <div class="row">
+            <img id="sleep" src="img/Eyecon.png" width="200" height="200" onmouseover="this.src='img/Eyecon Hl.png';" onmouseout="this.src='img/Eyecon.png';"/>
+            <img id="brain" src="img/Brain Icon.png" width="200" height="200" onmouseover="this.src='img/Brain Icon Hl.png';" onmouseout="this.src='img/Brain Icon.png';"/>
+            <img id="dreamcatcher" src="img/Dreamcatcher.png" width="200" height="200" onmouseover="this.src='img/Dreamcatcher Hl.png';" onmouseout="this.src='img/Dreamcatcher.png';"/>
+        </div>
+
+        <div class="row">
+            <img id="natural" src="img/Nature.png" width="200" height="200" onmouseover="this.src='img/Nature Hl.png';" onmouseout="this.src='img/Nature.png';"/>
+            <img id="wings" src="img/Wings.png" width="200" height="200" onmouseover="this.src='img/Wings Hl.png';" onmouseout="this.src='img/Wings.png';"/>
+            <img id="physical" src="img/Phys.png" width="200" height="200" onmouseover="this.src='img/Phys Hl.png';" onmouseout="this.src='img/Phys.png';"/>
+        </div>
+
+        <div class="row">
+            <img id="play" src="img/Head.png" width="200" height="200" onmouseover="this.src='img/Head Hl.png';" onmouseout="this.src='img/Head.png';"/>
+            <img id="insom" src="img/Logos For Assignment.png" width="200" height="200" onmouseover="this.src='img/Eyecon Hl.png';" onmouseout="this.src='img/Eyecon.png';"/>
+            <img id="moon" src="img/Moon.png" width="200" height="200" onmouseover="this.src='img/Moon Hl.png';" onmouseout="this.src='img/Moon.png';"/>
+        </div>
+        <script>
+            var sound1 = new buzz.sound("sound/breathing.mp3");
+            var sound2 = new buzz.sound("sound/Laughing.mp3");
+            var sound3 = new buzz.sound("sound/dream.mp3");
+            var sound4 = new buzz.sound("sound/crickets.mp3");
+            var sound5 = new buzz.sound("sound/Wings.mp3");
+            var sound6 = new buzz.sound("sound/sad.mp3");
+            var sound7 = new buzz.sound("sound/Chimes.mp3");
+            var sound8 = new buzz.sound("sound/insom.mp3");
+            var sound9 = new buzz.sound("sound/Moon.mp3");
+           
+
+            window.onload = function() {
+                document.getElementById('sleep').addEventListener('click', function () {sound1.play();});
+                document.getElementById('brain').addEventListener('click', function () {sound2.play();});
+                document.getElementById('dreamcatcher').addEventListener('click', function () {sound3.play();});
+                document.getElementById('natural').addEventListener('click', function () {sound4.play();});
+                document.getElementById('wings').addEventListener('click', function () {sound5.play();});
+                document.getElementById('physical').addEventListener('click', function () {sound6.play();});
+                document.getElementById('play').addEventListener('click', function () {sound7.play();});
+                document.getElementById('insom').addEventListener('click', function () {sound8.play();});
+                document.getElementById('moon').addEventListener('click', function () {sound9.play();});
+            }
+        </script>
+    </body>
+</html>
